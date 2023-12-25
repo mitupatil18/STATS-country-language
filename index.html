@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Countries</title>
+    <style>
+        .heading{
+            background-color: rgb(243, 238, 230);
+            justify-content: center;
+            text-align: center;
+            padding: 0.5%;
+            margin-bottom: 1%;
+        }
+        #btn1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 300;
+            font-size: 20px;
+            padding: 0.5%; 
+            border-radius: 10px;
+            background-color: orange;
+        }
+        #btn1:hover{
+            background-color: rgb(68, 230, 23);
+        }
+        #btn2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 300;
+            font-size: 20px;
+             padding: 0.5%; 
+            border-radius: 10px;
+            background-color: orange;
+        }
+        ul li{
+            text-decoration: none;
+            justify-content: center;
+            display:flex;
+            text-align: center;
+            align-items: center;
+        }
+        li{
+            justify-content: center;
+            
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            padding-right: 5%;
+            padding-left: 5%;
+        }
+        progress{
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1 style="color: orange;font-family: Arial, Helvetica, sans-serif;">World Countries Data</h1>
+        <h3 style="font-family: Arial, Helvetica, sans-serif;">Currently, we have 250 countries</h3>
+    </div>
+    <div class="heading">
+        <button id="btn1">LANGUAGES</button>
+        <button id="btn2">POPULATION</button>
+        <h4 style="font-size: 20px;">10 Most <span>Populated Countries </span>in the World</h4>
+    </div>
+    <div class="top-10">
+        <ul>
+            <li>
+                <p id="11"></p> <progress id="12"  max="100" value="0" style="width: 50%;height: 50px;"></progress><p id="13"></p>
+            </li>
+            <li>
+                <p id="21"></p> <progress id="22"  max="100" value="0" style="width: 50%;height: 50px;"></progress><p id="23"></p>
+            </li>
+            <li>
+                <p id="31"></p> <progress id="32"  max="100" value="0" style="width: 50%;height: 50px;"></progress><p id="33"></p>
+            </li>
+            <li>
+                <p id="41"></p> <progress id="42"  max="100" value="0" style="width: 50%;height: 50px;"></progress><p id="43"></p>
+            </li>
+            <li>
+                <p id="51"></p> <progress id="52"  max="100" value="0" style="width: 50%;height: 50px;"></progress><p id="53"></p>
+            </li>
+            <li>
+                <p id="61"></p> <progress id="62"  max="100" value="0" style="width: 50%;height: 50px;"></progress><p id="63"></p>
+            </li>
+            <li>
+                <p id="71"></p> <progress id="72"  max="100" value="0" style="width: 50%;height: 50px;"></progress><p id="73"></p>
+            </li>
+            <li>
+                <p id="81"></p> <progress id="82"  max="100" value="0" style="width: 50%;height: 50px;"></progress><p id="83"></p>
+            </li>
+            <li>
+                <p id="91"></p> <progress id="92"  max="100" value="0" style="width: 50%;height: 50px;"></progress><p id="93"></p>
+            </li>
+        </ul>
+    </div>
+    <script>
+        let p = document.getElementById("btn1");
+        let q = document.getElementById("btn2");
+        p.addEventListener("click",()=>{
+            p.style.backgroundColor = 'rgb(68, 230, 23)';
+            q.style.backgroundColor = 'orange';
+            let a1 = document.getElementById("11");
+            a1.innerHTML='English' ;
+            let a2 = document.getElementById("12");
+            a2.value = 91 ;
+            let a3 = document.getElementById("13");
+            a3.innerHTML='91' ;
+
+            let b1 = document.getElementById("21");
+            b1.innerHTML='French' ;
+            let b2 = document.getElementById("22");
+            b2.value = 45 ;
+            let b3 = document.getElementById("23");
+            b3.innerHTML='45' ;
+
+            let c1 = document.getElementById("31");
+            c1.innerHTML='Arabic' ;
+            let c2 = document.getElementById("32");
+            c2.value = 25 ;
+            let c3 = document.getElementById("33");
+            c3.innerHTML='25' ;
+
+            let d1 = document.getElementById("41");
+            d1.innerHTML='Spanish' ;
+            let d2 = document.getElementById("42");
+            d2.value = 24 ;
+            let d3 = document.getElementById("43");
+            d3.innerHTML='24' ;
+
+            let e1 = document.getElementById("51");
+            e1.innerHTML='Portguese' ;
+            let e2 = document.getElementById("52");
+            e2.value = 9 ;
+            let e3 = document.getElementById("53");
+            e3.innerHTML='9' ;
+
+            let f1 = document.getElementById("61");
+            f1.innerHTML='Russian' ;
+            let f2 = document.getElementById("62");
+            f2.value = 9 ;
+            let f3 = document.getElementById("63");
+            f3.innerHTML='9' ;
+
+            let g1 = document.getElementById("71");
+            g1.innerHTML='Dutch' ;
+            let g2 = document.getElementById("72");
+            g2.value = 9 ;
+            let g3 = document.getElementById("73");
+            g3.innerHTML='9' ;
+
+            let h1 = document.getElementById("81");
+            h1.innerHTML='German' ;
+            let h2 = document.getElementById("82");
+            h2.value = 8 ;
+            let h3 = document.getElementById("83");
+            h3.innerHTML='8' ;
+
+            let i1 = document.getElementById("91");
+            i1.innerHTML='Serbian' ;
+            let i2 = document.getElementById("92");
+            i2.value = 5 ;
+            let i3 = document.getElementById("93");
+            i3.innerHTML='5' ;
+
+            
+        });
+
+        q.addEventListener("click",()=>{
+            q.style.backgroundColor = 'rgb(68, 230, 23)';
+            p.style.backgroundColor = 'orange';
+            let a1 = document.getElementById("11");
+            a1.innerHTML='China' ;
+            let a2 = document.getElementById("12");
+            a2.value = 91 ;
+            let a3 = document.getElementById("13");
+            a3.innerHTML='99%' ;
+
+            let b1 = document.getElementById("21");
+            b1.innerHTML='India' ;
+            let b2 = document.getElementById("22");
+            b2.value = 45 ;
+            let b3 = document.getElementById("23");
+            b3.innerHTML='90%' ;
+
+            let c1 = document.getElementById("31");
+            c1.innerHTML='USA' ;
+            let c2 = document.getElementById("32");
+            c2.value = 25 ;
+            let c3 = document.getElementById("33");
+            c3.innerHTML='83%' ;
+
+            let d1 = document.getElementById("41");
+            d1.innerHTML='Indonesia' ;
+            let d2 = document.getElementById("42");
+            d2.value = 24 ;
+            let d3 = document.getElementById("43");
+            d3.innerHTML='74%' ;
+
+            let e1 = document.getElementById("51");
+            e1.innerHTML='Brazil' ;
+            let e2 = document.getElementById("52");
+            e2.value = 9 ;
+            let e3 = document.getElementById("53");
+            e3.innerHTML='69%' ;
+
+            let f1 = document.getElementById("61");
+            f1.innerHTML='Pakistan' ;
+            let f2 = document.getElementById("62");
+            f2.value = 9 ;
+            let f3 = document.getElementById("63");
+            f3.innerHTML='58%' ;
+
+            let g1 = document.getElementById("71");
+            g1.innerHTML='Nigeria' ;
+            let g2 = document.getElementById("72");
+            g2.value = 9 ;
+            let g3 = document.getElementById("73");
+            g3.innerHTML='45%' ;
+
+            let h1 = document.getElementById("81");
+            h1.innerHTML='Bangladesh' ;
+            let h2 = document.getElementById("82");
+            h2.value = 8 ;
+            let h3 = document.getElementById("83");
+            h3.innerHTML='33%' ;
+
+            let i1 = document.getElementById("91");
+            i1.innerHTML='Russia' ;
+            let i2 = document.getElementById("92");
+            i2.value = 5 ;
+            let i3 = document.getElementById("93");
+            i3.innerHTML='20%' ;
+
+            
+        });
+    </script>
+</body>
+</html>
